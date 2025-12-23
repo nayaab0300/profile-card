@@ -15,10 +15,6 @@
     align-items: center;
 }
 
-.mb {
-    margin-bottom: 12px;
-}
-
 .cards-wrapper {
     display: flex;
     justify-content: center;
@@ -35,11 +31,15 @@
     padding: 12px;
     display: flex;
     flex-direction: column;
+    gap: 12px;
+    transition: transform 0.3s ease;
+    box-shadow: 0.3s ease;
+
 }
 
 .card:hover{
-    transform: translateY(-4px);
-    transition: 0.2s ease;
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 
@@ -61,20 +61,37 @@ h2 {
 p {
     text-align: center;
     line-height: 1.5;
-    font-size: 0.95rem;
     color: #444;
+    font-size: 0.9rem;
+    max-width: 28ch;
+    margin-inline: auto;
 
 }
 button {
     display: block;
     margin: 0 auto;
     border: none;
-    padding: .8rem;
-    background-color: violet;
-    border-radius: 5px;
+    padding: .7rem 1.2rem;
+    border-radius: 6px;
     cursor: pointer;
     margin-top: auto;
+    background: #d946ef;
+    color: white;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    transform: 0.2s ease;
 }
+
+button:hover {
+  background-color: #b14ed8;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+
 
 
 
